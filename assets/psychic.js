@@ -25,6 +25,7 @@ document.onkeyup = function(event) {
             wins++;
             wins = document.querySelector("#wins").innerHTML = "Wins:" + wins;
             livesLeft = 9;
+            reset();
             console.log(wins);
         } else if (playerGuesses != letter) {
             livesLeft--;
@@ -34,4 +35,8 @@ document.onkeyup = function(event) {
 
         }
 
+}
+
+function reset() {
+    letter = letters[Math.floor(Math.random() * letters.length)];
 }
