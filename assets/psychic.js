@@ -45,5 +45,5 @@ function reset() {
     letter = letters[Math.floor(Math.random() * letters.length)];
 }
  function reset2() {
-     document.querySelector("#livesLeft").innerHTML = "Lives Left: " + livesLeft;
+     livesLeft = 9;
  }
