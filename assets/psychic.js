@@ -7,7 +7,7 @@ const letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
     //console.log(letters);
 
 let letter = letters[Math.floor(Math.random() * letters.length)];
-    //console.log(letter);
+    console.log(letter);
 
 let wins = 0;
 
@@ -20,6 +20,18 @@ let lettersGuesses = [];
 document.onkeyup = function(event) {
 
     let playerGuesses = event.key;
-    console.log(playerGuesses);
+        console.log(playerGuesses);
+        if (playerGuesses === letter) {
+            wins++;
+            wins = document.querySelector("#wins").innerHTML = "Wins:" + wins;
+            livesLeft = 9;
+            console.log(wins);
+        } else if (playerGuesses != letter) {
+            livesLeft--;
+            livesLeft = document.querySelector("#livesLeft").innerHTML = "Lives Left:" + livesLeft;
+            console.log(livesLeft);
+            lettersGuesses = document.querySelector("#lettersGuessed").innerHTML = "Letters Guessed:" + playerGuesses;
+
+        }
 
 }
