@@ -23,18 +23,20 @@ document.onkeyup = function(event) {
         console.log(playerGuesses);
         if (playerGuesses === letter) {
             wins = wins + 1;
-            wins = document.querySelector("#wins").innerHTML = "Wins:" + wins;
+            document.querySelector("#wins").innerHTML = "Wins: " + wins;
             livesLeft = 9;
             reset();
+            reset2();
             console.log(wins);
         } else if (playerGuesses !== letter) {
             livesLeft = livesLeft - 1;
-            document.querySelector("#livesLeft").innerHTML = "Lives Left:" + livesLeft;
+            document.querySelector("#livesLeft").innerHTML = "Lives Left: " + livesLeft;
             console.log(livesLeft);
-            document.querySelector("#lettersGuessed").innerHTML = "Letters Guessed:" + playerGuesses;
-        } else if (livesLeft === 0) {
+            document.querySelector("#lettersGuessed").innerHTML = "Letters Guessed: " + playerGuesses;
+        } if (livesLeft === 0) {
             losses = losses + 1;
             document.querySelector("#losses").innerHTML = "Losses:" + losses;
+            reset2();
         }
 
 }
@@ -42,3 +44,6 @@ document.onkeyup = function(event) {
 function reset() {
     letter = letters[Math.floor(Math.random() * letters.length)];
 }
+ function reset2() {
+     document.querySelector("#livesLeft").innerHTML = "Lives Left: " + livesLeft;
+ }
