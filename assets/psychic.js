@@ -22,17 +22,19 @@ document.onkeyup = function(event) {
     let playerGuesses = event.key;
         console.log(playerGuesses);
         if (playerGuesses === letter) {
-            wins++;
+            wins = wins + 1;
             wins = document.querySelector("#wins").innerHTML = "Wins:" + wins;
             livesLeft = 9;
             reset();
             console.log(wins);
-        } else if (playerGuesses != letter) {
-            livesLeft--;
-            livesLeft = document.querySelector("#livesLeft").innerHTML = "Lives Left:" + livesLeft;
+        } else if (playerGuesses !== letter) {
+            livesLeft = livesLeft - 1;
+            document.querySelector("#livesLeft").innerHTML = "Lives Left:" + livesLeft;
             console.log(livesLeft);
-            lettersGuesses = document.querySelector("#lettersGuessed").innerHTML = "Letters Guessed:" + playerGuesses;
-
+            document.querySelector("#lettersGuessed").innerHTML = "Letters Guessed:" + playerGuesses;
+        } else if (livesLeft === 0) {
+            losses = losses + 1;
+            document.querySelector("#losses").innerHTML = "Losses:" + losses;
         }
 
 }
