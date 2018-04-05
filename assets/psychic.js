@@ -8,7 +8,7 @@ const letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
 
 //generate letter to be guesses
 let letter = letters[Math.floor(Math.random() * letters.length)];
-    console.log(letter);
+    //console.log(letter);
 
 //variables for game play
 let wins = 0;
@@ -22,7 +22,10 @@ let lettersGuesses = [];
 //capture players keyups
 document.onkeyup = function(event) {
     let playerGuesses = event.key;
-        console.log(playerGuesses);
+    let letter = letters[Math.floor(Math.random() * letters.length)];
+        //console.log(letter);
+    document.querySelector("#theLetter").innerHTML = "?";
+        //console.log(playerGuesses);
         //code for winning conditions
         if (playerGuesses === letter) {
             wins = wins + 1;
@@ -34,8 +37,9 @@ document.onkeyup = function(event) {
         } else if (playerGuesses !== letter) {
             livesLeft = livesLeft - 1;
             document.querySelector("#livesLeft").innerHTML = "Lives Left: " + livesLeft;
-            console.log(livesLeft);
-            document.querySelector("#lettersGuessed").append(playerGuesses);
+            //console.log(livesLeft);
+            //append incorrect guesses
+            document.querySelector("#lettersGuessed").append("" + playerGuesses + "," + " ");
             //code for losing conditions
         } if (livesLeft === 0) {
             losses = losses + 1;
@@ -44,10 +48,24 @@ document.onkeyup = function(event) {
             livesLeft = 9;
             document.querySelector("#livesLeft").innerHTML = "Lives Left: " + livesLeft;
             //console.log(livesLeft);
+            //reveal letter
+            document.querySelector("#theLetter").innerHTML = letter;
+            lettersGuesses = [];
+            document.querySelector("#lettersGuessed").innerHTML = "Letters Guessed: " + " ";
         }
 }
 
 //player guesses correct letter, letter to guess resets
 function reset() {
     letter = letters[Math.floor(Math.random() * letters.length)];
+}
+
+document.onclick = function startOver() {
+    reset()
+    losses = losses + 1;
+    document.querySelector("#losses").innerHTML = "Losses: " + losses;
+    livesLeft = 9;
+    document.querySelector("#livesLeft").innerHTML = "Lives Left: " + livesLeft;
+    lettersGuesses = [];
+    document.querySelector("#lettersGuessed").innerHTML = "Letters Guessed: " + " ";
 }
