@@ -35,7 +35,7 @@ document.onkeyup = function(event) {
             livesLeft = livesLeft - 1;
             document.querySelector("#livesLeft").innerHTML = "Lives Left: " + livesLeft;
             console.log(livesLeft);
-            document.querySelector("#lettersGuessed").innerHTML = "Letters Guessed: " + playerGuesses;
+            document.querySelector("#lettersGuessed").append(playerGuesses);
             //code for losing conditions
         } if (livesLeft === 0) {
             losses = losses + 1;
