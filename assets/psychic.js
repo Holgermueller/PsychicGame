@@ -39,17 +39,14 @@ document.onkeyup = function(event) {
             //code for losing conditions
         } if (livesLeft === 0) {
             losses + 1;
-            document.querySelector("#losses").innerHTML = "Losses:" + losses + 1;
-            reset2();
+            document.querySelector("#losses").innerHTML = "Losses: " + losses;
+            livesLeft = 9;
+            document.querySelector("#livesLeft").innerHTML = "Lives Left: " + livesLeft;
+            console.log(livesLeft);
         }
 }
 
 //player guesses correct letter, letter to guess resets
 function reset() {
     letter = letters[Math.floor(Math.random() * letters.length)];
-}
-
-//player wins or loses, livesLeft resets to 9
-function reset2() {
-    let livesLeft = 9;
 }
