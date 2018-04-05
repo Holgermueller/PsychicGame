@@ -38,11 +38,12 @@ document.onkeyup = function(event) {
             document.querySelector("#lettersGuessed").innerHTML = "Letters Guessed: " + playerGuesses;
             //code for losing conditions
         } if (livesLeft === 0) {
-            losses + 1;
+            losses = losses + 1;
             document.querySelector("#losses").innerHTML = "Losses: " + losses;
+            //console.log(losses);
             livesLeft = 9;
             document.querySelector("#livesLeft").innerHTML = "Lives Left: " + livesLeft;
-            console.log(livesLeft);
+            //console.log(livesLeft);
         }
 }
 
