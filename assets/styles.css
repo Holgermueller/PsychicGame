@@ -1,21 +1,41 @@
+body {
+    background-image: url("../assets/images/foggy-lake-mist-154246.jpg");
+    background-size: 100%;
+}
+
 .header, .h2, .letter-header, .the-letter {
     text-align: center;
     font-weight: bold;
 }
 
 .header {
-    background-color: aqua;
-    color: darkmagenta;
+    color: #696969;
     font-size: 3em;
     width: 60%;
     margin-left: 20%;
 }
 
+.the-letter {
+    font-size: 3em;
+    color: #a9a9a9;
+    padding-bottom: 2px;
+    text-decoration: underline;
+}
 
+.button {
+    margin-left: 45%;
+    border-radius: 50%;
+    padding: 15px;
+    background-color: #ffd700;
+    font-weight: bolder;
+}
+
+.warning {
+    padding-top: 2%;
+}
 
 .footer {
-    background-color: aqua;
-    color: darkmagenta;
+    color: #696969;
     text-align: center;
     margin: 10% 0 0 38%;
     width: 25%;
