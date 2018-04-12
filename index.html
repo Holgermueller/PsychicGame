@@ -14,7 +14,7 @@
 <body>
     <h1 class="header">The Psychic Game</h1>
     <br>
-    <h2 class="h2">Press any letter to test your paranormal abilities!</h2>
+    <h2 class="h2">Press any letter to test your paranormal abilities.</h2>
     <br>
 
             <div class="letter-header">The letter is:</div>
@@ -29,13 +29,15 @@
             <br>
             <div id="livesLeft" class="board">Lives Left: 9</div>
             <br>
-            <div id="lettersGuessed" class="board">Letters Guessed: </div>
+            <div class="board">Letters Guessed: </div>
+            <br>
+            <div class="board" id="lettersGuessed"></div>
         </div>
         <br>
         <div>
             <button id="button" class="button">Try Again</button>
-            <p class="warning">Warning: Pressing the try again will return your lives left to 
-                9, but it will also increase your losses by 1.
+            <p class="warning">Warning: Pressing the try again returns  lives left to 
+                9 and empties letters guessed, but it also increases losses by 1.
             </p>
         </div>
 

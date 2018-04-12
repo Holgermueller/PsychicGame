@@ -22,8 +22,14 @@ body {
     text-decoration: underline;
 }
 
+.score-board {
+    text-align: center;
+    width: 25%;
+    margin-left: 37%;
+}
+
 .button {
-    margin-left: 45%;
+    margin-left: 46%;
     border-radius: 50%;
     padding: 15px;
     background-color: #ffd700;
@@ -31,12 +37,17 @@ body {
 }
 
 .warning {
-    padding-top: 2%;
+    padding: 2%;
+    width: 54%;
+    margin: 1% 0 0 22%;
+    line-height: 1.6em;
+    background-color: #fffafa;
+    opacity: 0.4;
 }
 
 .footer {
     color: #696969;
     text-align: center;
-    margin: 10% 0 0 38%;
+    margin: 3% 0 0 38%;
     width: 25%;
 }
