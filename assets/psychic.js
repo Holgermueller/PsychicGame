@@ -33,6 +33,8 @@ document.onkeyup = function(event) {
             livesLeft = 9;
             reset();
             console.log(wins);
+            lettersGuesses = [];
+            document.querySelector("#lettersGuessed").innerHTML = "Letters Guessed: " + " ";
             //code for when a player guesses wrong letter
         } else if (playerGuesses !== letter) {
             livesLeft = livesLeft - 1;
