@@ -32,9 +32,14 @@ body {
 .button {
     margin-left: 46%;
     border-radius: 50%;
+    border: solid;
+    border-color: #ffff38 #ffff38 #ffd12a #ffd12a;
     padding: 15px;
     background-color: #ffd700;
     font-weight: bolder;
+    text-shadow: 1px 1px black, -1px -1px whitesmoke;
+    color: #ffd12a;
+    font-size: 1.5em;
 }
 
 .warning {
