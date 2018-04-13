@@ -1,6 +1,8 @@
 body {
     background-image: url("../assets/images/foggy-lake-mist-154246.jpg");
     background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .header, .h2, .letter-header, .the-letter {
