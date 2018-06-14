@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Psycic Game</title>
 
-<!--stylesheets-->
-<link rel="stylesheet" href="./assets/reset.css">
-<link rel="stylesheet" href="./assets/styles.css">
+    <!--stylesheets-->
+    <link rel="stylesheet" href="./assets/reset.css">
+    <link rel="stylesheet" href="./assets/styles.css">
 
 </head>
-<body>
-    <h1 class="header">The Psychic Game</h1>
-    <br>
-    <h2 class="h2">Press any letter to test your paranormal abilities.</h2>
-    <br>
 
-            <div class="letter-header">The letter is:</div>
-            <br>
-            <div id="theLetter" class="the-letter">?</div>
-            <br>
+<body>
+    <main class="container">
+        <h1 class="header">The Psychic Game</h1>
+        <br>
+        <h2 class="h2">Press any letter to test your paranormal abilities.</h2>
+        <br>
+
+        <div class="letter-header">The letter is:</div>
+        <br>
+        <div id="theLetter" class="the-letter">?</div>
+        <br>
 
         <div class="score-board">
             <div id="wins" class="board">Wins: 0</div>
@@ -36,15 +39,17 @@
         <br>
         <div>
             <button id="button" class="button">Try Again</button>
-            <p class="warning">Warning: Pressing the try again returns  lives left to 
-                9 and empties letters guessed, but it also increases losses by 1.
+            <p class="warning">Warning: Pressing the Try Again button returns lives left to 9 and empties letters guessed, but it also increases
+                losses by 1.
             </p>
         </div>
+    </main>
 
-<footer class="footer">&copy; 2018 Holger Mueller</footer>
+    <footer class="footer">&copy; 2018 Holger Mueller</footer>
 
-<!--script tags-->
-<script type="text/javascript" src="./assets/psychic.js"></script>
+    <!--script tags-->
+    <script type="text/javascript" src="./assets/psychic.js"></script>
 
 </body>
+
 </html>

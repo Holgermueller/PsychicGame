@@ -41,7 +41,7 @@ document.onkeyup = function(event) {
             document.querySelector("#livesLeft").innerHTML = "Lives Left: " + livesLeft;
             //console.log(livesLeft);
             //append incorrect guesses
-            document.querySelector("#lettersGuessed").append("" + playerGuesses + "," + " ");
+            document.querySelector("#lettersGuessed").append("" + playerGuesses + ", ");
             //code for losing conditions
         } if (livesLeft === 0) {
             losses = losses + 1;

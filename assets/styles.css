@@ -1,7 +1,11 @@
 body {
-    background-image: url("../assets/images/foggy-lake-mist-154246.jpg");
+    background-image: url("../assets/images/fog.jpeg");
     background-size: cover;
     background-attachment: fixed;
+}
+
+.container {
+    margin-top: 6%;
 }
 
 .header, .h2, .letter-header, .the-letter {
@@ -30,10 +34,9 @@ body {
 }
 
 .button {
-    margin-left: 46%;
+    margin-left: 43%;
     border-radius: 50%;
     border: solid;
-    border-color: #ffff38 #ffff38 #ffd12a #ffd12a;
     padding: 15px;
     background-color: #ffd700;
     font-weight: bolder;
