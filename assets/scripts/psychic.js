@@ -25,7 +25,7 @@ document.onkeyup = event => {
         livesLeft = 9;
         reset();
         lettersGuesses = [];
-        document.querySelector("#lettersGuessed").innerHTML = "Letters Guessed: " + " ";
+        document.querySelector("#lettersGuessed").innerHTML = " ";
         //code for when a player guesses wrong letter
     } else if (playerGuesses !== letter) {
         livesLeft = livesLeft - 1;
@@ -41,7 +41,7 @@ document.onkeyup = event => {
         //reveal letter
         document.querySelector("#theLetter").innerHTML = letter;
         lettersGuesses = [];
-        document.querySelector("#lettersGuessed").innerHTML = "Letters Guessed: " + " ";
+        document.querySelector("#lettersGuessed").innerHTML = " ";
     }
 }
 
@@ -57,5 +57,5 @@ document.onclick = function startOver() {
     livesLeft = 9;
     document.querySelector("#livesLeft").innerHTML = "Lives Left: " + livesLeft;
     lettersGuesses = [];
-    document.querySelector("#lettersGuessed").innerHTML = "Letters Guessed: " + " ";
+    document.querySelector("#lettersGuessed").innerHTML = " ";
 }

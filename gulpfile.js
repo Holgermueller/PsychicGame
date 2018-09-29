@@ -2,7 +2,8 @@ const gulp = require('gulp');
 const less = require('gulp-less');
 const bs = require('browser-sync').create();
 const cleanCSS = require('gulp-clean-css');
-const uglify = require('gulp-uglifyes');
+const rename = require("gulp-rename");
+const uglify = require('gulp-uglify-es').default;
 
 // set up browser-sync
 gulp.task('browser-sync', () => {
@@ -30,8 +31,9 @@ gulp.task('minify-css', () => {
 // uglify js
 gulp.task('uglify', () => {
     gulp.src('./assets/**/*.js')
+    .pipe(rename('psychic.min.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('./assets'));
+    .pipe(gulp.dest('./assets/scripts'));
 })
 
 // watch files for changes
