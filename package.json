@@ -1,0 +1,27 @@
+{
+  "name": "psychicgame",
+  "version": "1.0.0",
+  "description": "A javaScript powered game of chance.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Holgermueller/PsychicGame.git"
+  },
+  "author": "Holger Mueller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Holgermueller/PsychicGame/issues"
+  },
+  "homepage": "https://github.com/Holgermueller/PsychicGame#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.7",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-less": "^4.0.1",
+    "gulp-uglifyes": "^0.2.1",
+    "less": "^3.8.1"
+  }
+}
