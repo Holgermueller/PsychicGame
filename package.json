@@ -4,7 +4,7 @@
   "description": "A javaScript powered game of chance.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postcss:watch": "postcss assets/styles/styles.css --dir public --watch"
   },
   "repository": {
     "type": "git",
@@ -17,10 +17,14 @@
   },
   "homepage": "https://github.com/Holgermueller/PsychicGame#readme",
   "devDependencies": {
+    "autoprefixer": "^10.4.11",
     "browser-sync": "^2.26.13",
+    "cssnano": "^5.1.13",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-less": "^4.0.1",
-    "less": "^4.1.0"
+    "less": "^4.1.0",
+    "postcss": "^8.4.16",
+    "postcss-cli": "^10.0.0"
   }
 }

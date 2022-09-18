@@ -1,56 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Psycic Game</title>
 
-    <!--stylesheets-->
-    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link rel="stylesheet" href="./public/styles.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <main class="container">
-        <h1 class="header">The Psychic Game</h1>
-        <br>
-        <h2 class="h2">Press any letter to test your paranormal abilities.</h2>
-        <br>
-        <div class="letter-container">
-            <div class="letter-header">The letter is:</div>
-            <br>
-            <div id="theLetter" class="the-letter">?</div>
-            <br>
-        </div>
+      <h1 class="header">The Psychic Game</h1>
+      <br />
+      <h2 class="instructions">
+        Press any letter to test your paranormal abilities.
+      </h2>
+      <br />
+      <div class="letter-container">
+        <div class="letter-header">The letter is:</div>
+        <br />
+        <div id="theLetter" class="the-letter">?</div>
+        <br />
+      </div>
 
-        <div class="score-board">
-            <div id="wins" class="board">Wins: 0</div>
-            <br>
-            <div id="losses" class="board">Losses: 0</div>
-            <br>
-            <div id="livesLeft" class="board">Lives Left: 9</div>
-            <br>
-            <div class="board">Letters Guessed: </div>
-            <br>
-            <div class="board" id="lettersGuessed"></div>
-        </div>
-        <br>
-        <div class="button-warning">
-            <button id="button" class="button">Try Again</button>
-            <p class="warning">Warning: Pressing the Try Again button returns lives left to 9 and empties letters
-                guessed, but it also increases
-                losses by 1.
-            </p>
-        </div>
+      <div class="score-board">
+        <div id="wins" class="board">Wins: 0</div>
+        <br />
+        <div id="losses" class="board">Losses: 0</div>
+        <br />
+        <div id="livesLeft" class="board">Lives Left: 9</div>
+        <br />
+        <div class="board">Letters Guessed:</div>
+        <br />
+        <div class="board" id="lettersGuessed"></div>
+      </div>
+      <br />
+      <div class="button-warning">
+        <button id="button" class="button">Try Again</button>
+        <p class="warning">
+          Warning: Pressing the Try Again button returns lives left to 9 and
+          empties letters guessed, but it also increases losses by 1.
+        </p>
+      </div>
     </main>
 
     <footer class="footer">&copy; 2018 Holger Mueller</footer>
 
-    <!--script tags-->
     <script type="text/javascript" src="./assets/scripts/psychic.js"></script>
-
-</body>
-
+  </body>
 </html>
