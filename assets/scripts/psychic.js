@@ -26,7 +26,7 @@ const letters = [
   "w",
   "x",
   "y",
-  "z"
+  "z",
 ];
 
 let letter = letters[Math.floor(Math.random() * letters.length)];
@@ -36,7 +36,7 @@ let losses = 0;
 let livesLeft = 9;
 let lettersGuesses = [];
 
-document.onkeyup = event => {
+document.onkeyup = (event) => {
   let playerGuesses = event.key;
   let letter = letters[Math.floor(Math.random() * letters.length)];
   document.querySelector("#theLetter").innerHTML = "?";
@@ -76,3 +76,7 @@ document.onclick = function startOver() {
   lettersGuesses = [];
   document.querySelector("#lettersGuessed").innerHTML = " ";
 };
+
+const d = new Date();
+let year = d.getFullYear();
+document.getElementById("year").innerHTML = year;
